@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,300;0,500;0,600;1,200;1,300 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#corpo {
+    background-color: #0082bc;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #edf1f4; */
+    
+}
+/* ---- IMAGEM ---- */
+figure img {
+    width: 290px;
+    padding-bottom: 25px;
+}
+
+.login form .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- FIM DA IMAGEM ---- */
+
+
+.login {
+    position: relative;
+    width: 480px;
+    padding: 80px 50px 50px;
+    box-shadow: 10px 10px 20px rgba(248, 248, 248, 0.572);
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: #edf1f4;
+}
+
+.login form {
+    position: relative;
+    width: 100%;
+}
+
+.login form .inputBox {
+    position: relative;
+    display: flex;
+}
+
+.login form .inputBox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.login form .inputBox input {
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0,0, 0, 0.1), inset -5px -5px 10px #fff;
+}
+
+.login form .inputBox i {
+    position: absolute;
+    left: 20px;
+    top: 21%;
+    font-size: 1.3em;
+}
+
+.login form label {
+    display: flex;
+    align-items: center;
+}
+
+.login form label input {
+    margin-right: 10px;
+}
+
+
+/* ---- BOTÃO ---- */
+
+.login form .inputSubmit input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0, 0, 0.1), -5px -5px 10px #fff;
+    width: 100%;
+    padding: 15px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login form .inputSubmit input:focus {
+    box-shadow: inset 5px 5px 10px rgba(0,0, 0, 0.1), inset -5px -5px 10px #fff;
+}
+
+/* ---- IMPRESÃO DIGITAL ---- */
+
+.login .fingerprint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.login .fingerprint .fingerprintBox {
+    box-shadow:  5px 5px 10px rgba(0,0, 0, 0.1),  -5px -5px 10px #fff;
+    border: 3px solid #edf1f4;
+    padding: 15px 20px 10px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #03a9f4, #0082bc);
+}
+
+.login .fingerprint .fingerprintBox img {
+    max-width: 40px;
+    filter: invert(1);
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0%,100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* 
+#fffb */
+
+@media (max-width: 550px) {
+    .login {
+        width: 350px;
+        height: 650px;
+    }
+}
